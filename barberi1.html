@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>barber</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.banner{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url(background.jpeg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.navbar{
+			
+			margin-top: -2px;
+			padding: 35px 0px;
+		     display: flex;
+		     align-items: center;
+		     justify-content: space-between;
+		     margin-left: 900px;
+		}
+				.navbar ul li{
+				list-style: none;
+				display: inline-block;
+				margin: 0 20px;
+				position: relative;
+			}
+			.navbar ul li a{
+				text-decoration: none;
+				color: #ffffff;
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+			.navbar ul li::after{
+				content: '';
+				height: 3px;
+				width: 0%;
+				background: #99EDC3;
+				position: absolute;
+				left: 0;
+				bottom: -10px;
+				transition: 0.5s;
+			}
+			.navbar ul li:hover::after{
+				width: 100%;
+
+			}
+			.content{
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+				color: white;
+			}
+			.content h1{
+				font-size: 65px;
+				margin-right: 80px;
+			}
+            .content p{
+            	margin: 20px auto;
+            	font-weight: 150px;
+            	font-size: 25px;
+            }
+            .rdp{
+            	width: 280px;
+            	padding: 20px 0;
+            	text-align: center;
+            	margin: 20px 10px;
+            	border-radius: 50px;
+            	border: 2px solid #99EDC3;
+            	background: none;
+            	font-size: 30px;
+            	color: white;
+            	cursor: pointer;
+            	position: relative;
+            	overflow: hidden;
+           }
+            .rdp:hover{
+           	border: none;
+           	background: #99EDC3;
+           	color: #111;
+           	box-shadow: 0 0 50px #99EDC3;
+           }
+	</style>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<body>
+<div class="banner">
+	<div>
+		<h2 style="text-decoration: none; font-size: 37px; font-family: Staatliches; float: left; margin-top: 20px; margin-left: 30px; color: white; letter-spacing: 2px;">
+			BARBERIAN
+		</h2>
+	</div>
+	<div class="navbar">
+	 	  <ul>
+	  	<li><a href="barberi1.html">Home</a></li>
+	  	<li><a href="booking.html">Book Now</a></li>
+	  	<li><a href="testimonials.html">Testimonials</a></li>
+	  	<li><a href="bcontact.html">Contact Us</a></li>
+	  </ul>
+	</div>
+<div class="content">
+	<h1>MOVE OUT WITH STYLE</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt</p>
+<div>
+	<a href="booking.html">
+	<button class="rdp">Book your Turn</button>
+    </a>
+</div>
+</div>
+</div>
+</body>
+</html>
